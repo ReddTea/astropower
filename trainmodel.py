@@ -21,7 +21,7 @@ for i in range(len(r1)):
         y_train[i] =  (r3>0.33)*3
 y_train = np.array(y_train)
 
-files =  glob.glob("./fits/*.fits")
+files =  glob.glob("./kerasfits/*.fits")
 x_train = np.array([])
 for pathfile in files:
     hdulist = fits.open(pathfile)
